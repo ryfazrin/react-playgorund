@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import ProductList from './ProductList';
 
 function App() {
   const [title, setTitle] = useState("Hello World");
@@ -20,11 +21,7 @@ function App() {
     <div>
       <h2>{ title }</h2>
       <button onClick={ changeTitle }>Change Title</button>
-      <ul>
-        {products.map((product) => (
-          <li key={ product.id }>{ product.title } - { product.price }</li>
-        ))}
-      </ul>
+      <ProductList products={ products } />
     </div>
   );
 }
