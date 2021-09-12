@@ -17,11 +17,16 @@ function App() {
     {id: 5, title: 'Product 5', price: 389}
   ]);
 
+  const deleteProduct = (productId) => {
+    const newProducts = products.filter(product => product.id !== productId);
+    setProducts(newProducts);
+  };
+
   return (
     <div>
       <h2>{ title }</h2>
       <button onClick={ changeTitle }>Change Title</button>
-      <ProductList products={ products } />
+      <ProductList products={ products }  deleteProduct={ deleteProduct } />
     </div>
   );
 }
