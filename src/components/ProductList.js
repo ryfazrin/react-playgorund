@@ -21,6 +21,7 @@ const ProductList = () => {
         'Content-type': 'application/json'
       }
     });
+    fetchData();
   };
 
 

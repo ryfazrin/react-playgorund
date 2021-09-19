@@ -21,19 +21,9 @@
       "price": 763
     },
     {
-      "id": 5,
-      "title": "Product 5",
-      "price": 389
-    },
-    {
       "title": "keju",
       "price": "111",
       "id": 6
-    },
-    {
-      "title": "tektek lagi",
-      "price": "300",
-      "id": 7
     }
   ]
 }
