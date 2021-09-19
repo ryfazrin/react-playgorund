@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     console.log('Use Effect Running');
-  });
+  }, []);
 
   return (
     <div>
