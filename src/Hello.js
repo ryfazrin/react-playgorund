@@ -1,6 +1,5 @@
-const Hello = (props) => {
-  const { name } = props
-  return `Hello ${name}!`
+const Hello = ({ name, gretting }) => {
+  return `Hello ${name}, ${gretting}!`
 }
 
 export default Hello
