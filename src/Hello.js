@@ -1,3 +1,2 @@
-export function Hello() {
-  return 'Hello!';
-}
+const Hello = (props) => `Hello ${props.name}`;
+export default Hello;
