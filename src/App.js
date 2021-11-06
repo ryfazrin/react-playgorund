@@ -1,27 +1,14 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
-import AddProduct from './components/AddProduct';
-import EditProduct from './components/EditProduct';
-import ProductList from './components/ProductList';
+import './App.css'
+import { Hello } from './Hello'
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <ProductList />
-          </Route>
-          <Route exact path="/add">
-            <AddProduct />
-          </Route>
-          <Route exact path="/edit/:id">
-            <EditProduct />
-          </Route>
-        </Switch>
-      </Router>
+    <div className='App'>
+      <header className='App-header'>
+        <Hello />
+      </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
