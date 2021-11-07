@@ -1,5 +1,5 @@
 const Hello = ({ name, gretting }) => {
-  return `Hello ${name}, ${gretting}!`
-}
+  return `Hello ${name}, ${gretting}!`;
+};
 
-export default Hello
+export default Hello;
