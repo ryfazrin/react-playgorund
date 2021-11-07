@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./components/Counter";
 import Hello from "./components/Hello";
 import Rendering from "./components/Rendering";
 
@@ -17,6 +18,7 @@ function App() {
         <Title text="hai" />
         <Hello name="Ryan" gretting="Nice to meet you" />
         <Rendering />
+        <Counter />
       </header>
     </div>
   );
