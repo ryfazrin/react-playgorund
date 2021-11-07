@@ -1,14 +1,12 @@
+import { useState } from "react";
+
 const Counter = () => {
-  let number = 0;
-  const increment = () => {
-    number += 1;
-    console.log(number);
-  };
+  const[number, increment] = useState(0)
 
   return (
     <div>
       <p>Nilai counter saat ini: {number}</p>
-      <button onClick={increment}> + </button>
+      <button onClick={() => increment(number+1)}> + </button>
     </div>
   );
 };
